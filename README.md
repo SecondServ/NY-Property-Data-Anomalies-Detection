@@ -36,5 +36,5 @@ Filling in missing field values - Fields that contain missing values: ZIP, STORI
   - bldvol = bldarea * STORIES
 - Calculate 9 variables, each of the 3 value fields normalized by each of these 3 sizes (3 * 3 = 9 variables)
 - Create the grouped averages of these 9 variables, grouped by zip5, zip3, TAXCLASS, borough
-- Divide each of the 9 ratio variables by the 4 scale factors from these groupings. This makes 9 + 9 * 4 = 45 variables  
+- Divide each of the 9 ratio variables by the 4 scale factors from these groupings. This makes 9 + 9 * 4 = 45 variables  <br>
 ![image](https://user-images.githubusercontent.com/72418274/117077600-47659b80-aced-11eb-84a4-86b8c0403dff.png)
