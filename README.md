@@ -7,7 +7,9 @@ Find Anomalies in NY Property Data
 - Their data is relatively large and fairly messy. About a million property records with about 32 fields. Many records have missing fields.
 - One record for each property. Fields are things like address, owner, property characteristics, assessed tax values…
 - They want to build an algorithm that can look through their ~1 million property records to find potential tax fraud.
-- The kind of fraud they’re looking for is people underpaying tax by misrepresenting their property characteristics.
+- The kind of fraud they’re looking for is people underpaying tax by misrepresenting their property characteristics.  
+  
+Based on the problem description and given dataset, I decided to leverage **unsupervised machine learning algorithms** to solve this problem 
 
 ### Solution Approach:
 1.**Create a data quality report:** A DQR is a preliminary quantitative analysis that explores and documents the basic characteristics of a data file.  
@@ -40,3 +42,9 @@ Filling in missing field values - Fields that contain missing values: ZIP, STORI
   
     
 ![image](https://user-images.githubusercontent.com/72418274/117077600-47659b80-aced-11eb-84a4-86b8c0403dff.png)
+
+- Generate a statistics table for all the variables built.
+
+4.**Modeling**:
+- Using principle components analysis to do dimenionalty reduction. It turns out 6 PCs are able to capture 99% of variation in the 45 features.
+- 
