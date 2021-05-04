@@ -11,15 +11,22 @@ Find Anomalies in NY Property Data
 
 ### Solution Approach:
 1.**Create a data quality report:** A DQR is a preliminary quantitative analysis that explores and documents the basic characteristics of a data file.  
-It is
+It is:
 - Basic info about the file (how many records, time period, source…)
 - Summary statistics for each field
   - Percent populated, # zeros
   - Numeric: min, max, mean, stdev, distribution/histogram
   - Categorical: # values, histogram or table of values, top several values
+
 It serves as:
 - a check with the business to make sure the data is correct
 - help you get familiar with the data
 - a resource for when you start to build variables
 
-2.**Data preprocessing:** 
+2.**Data preprocessing:**
+Filling in missing field values - Fields that contain missing values: ZIP, STORIES, FULLVAL, AVLAND, AVTOT, LTFRONT, LTDEPTH, BLDFRONT, BLDDEPTH. There are a lot of ways to fill in missing values, but the main idea is the same ----> to replace the missing field value with something reasonable. In this problem, I used the average or most common value of that field over a relevant subset of records:
+  - Select one or more other fields that you think are important in determining the missing field
+  - Group the selected field(s) into categories
+  - Replace the missing field with the average or most common value for its appropriate group
+
+
