@@ -47,4 +47,6 @@ Filling in missing field values - Fields that contain missing values: ZIP, STORI
 
 4.**Modeling**:
 - Using principle components analysis to do dimenionalty reduction. It turns out 6 PCs are able to capture 99% of variation in the 45 features.
-- 
+- Z-scaling the 6 selected PCs to make them more comparable in relative dimension (call them z-scores).
+- Calculate fraud scores:
+  - score 1: Combine the z-scores with a heuristic algorithm
