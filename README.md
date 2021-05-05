@@ -1,6 +1,11 @@
 # NY-Property-Data-Anomalies-Detection
 Find Anomalies in NY Property Data
 
+### Table of Content:
+- [Code](Project%201.ipynb)
+- [Data Quality Report](NY%20Data%20Quailty%20Report.pdf)
+- [45 Created Variables and Statistics](45%20Vars%20Stats.csv)
+
 ### Problem Overview:
 - City of NY think there might be some property tax fraud going on in their city, but they’re not sure.
 - They have no idea how to discover this. They can’t just look through all the records manually.
@@ -43,7 +48,7 @@ Fields that contain missing values: ZIP, STORIES, FULLVAL, AVLAND, AVTOT, LTFRON
     
 ![image](https://user-images.githubusercontent.com/72418274/117077600-47659b80-aced-11eb-84a4-86b8c0403dff.png)
 
-- Generate a statistics table for all the variables built.
+- Generate a [statistics table](45%20Vars%20Stats.csv) for all the variables built.
 
 4.**Modeling:**
 - Using principle components analysis to do dimenionalty reduction. It turns out 6 PCs are able to capture 99% of variation in the 45 features.
