@@ -50,5 +50,5 @@ Fields that contain missing values: ZIP, STORIES, FULLVAL, AVLAND, AVTOT, LTFRON
 - Z-scaling the 6 selected PCs to make them more comparable in relative dimensions (call them z-scores).
 - Calculate fraud scores:
   - score 1: Combine the z-scores with a heuristic algorithm, which means to measure distance to find closeness of records, this helps revealing outliers(anomolies)  
-  $s_1$
+  $$/begin{}$$
   - score 2: 
