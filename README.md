@@ -12,7 +12,7 @@ Find Anomalies in NY Property Data
 Based on the problem description and given dataset, I decided to leverage **unsupervised machine learning algorithms** to solve this problem 
 
 ### Solution Approach:
-1.**Create a data quality report ([DQR](NY Data Quailty Report.pdf)):** A DQR is a preliminary quantitative analysis that explores and documents the basic characteristics of a data file.  
+1.**Create a data quality report ([DQR](NY%20Data%20Quailty%20Report.pdf)):** A DQR is a preliminary quantitative analysis that explores and documents the basic characteristics of a data file.  
 It is:
 - Basic info about the file (how many records, time period, source…)
 - Summary statistics for each field
