@@ -25,8 +25,8 @@ It serves as:
 - help you get familiar with the data
 - a resource for when you start to build variables
 
-2.**Data preprocessing:**
-Filling in missing field values - Fields that contain missing values: ZIP, STORIES, FULLVAL, AVLAND, AVTOT, LTFRONT, LTDEPTH, BLDFRONT, BLDDEPTH. There are a lot of ways to fill in missing values, but the main idea is the same ----> to replace the missing field value with something reasonable. In this problem, I used the average or most common value of that field over a relevant subset of records:
+2.**Data preprocessing:**(Filling in missing field values only in this case)   
+Fields that contain missing values: ZIP, STORIES, FULLVAL, AVLAND, AVTOT, LTFRONT, LTDEPTH, BLDFRONT, BLDDEPTH. There are a lot of ways to fill in missing values, but the main idea is the same ----> to replace the missing field value with something reasonable. In this problem, I used the average or most common value of that field over a relevant subset of records:
   - Select one or more other fields that you think are important in determining the missing field
   - Group the selected field(s) into categories
   - Replace the missing field with the average or most common value for its appropriate group
@@ -47,6 +47,8 @@ Filling in missing field values - Fields that contain missing values: ZIP, STORI
 
 4.**Modeling**:
 - Using principle components analysis to do dimenionalty reduction. It turns out 6 PCs are able to capture 99% of variation in the 45 features.
-- Z-scaling the 6 selected PCs to make them more comparable in relative dimension (call them z-scores).
+- Z-scaling the 6 selected PCs to make them more comparable in relative dimensions (call them z-scores).
 - Calculate fraud scores:
-  - score 1: Combine the z-scores with a heuristic algorithm
+  - score 1: Combine the z-scores with a heuristic algorithm, which means to measure distance to find closeness of records, this helps revealing outliers(anomolies)  
+  $s_1$
+  - score 2: 
